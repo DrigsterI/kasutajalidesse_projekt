@@ -1,0 +1,150 @@
+:root {
+  --background: linear-gradient(to bottom, #18181F 0%, #131327 100%);
+  --background-light: #1F1F28;
+  --accent: #40ECFF;
+  --text: #D9D9D9;
+  --text-darker: #A5A6A8;
+}
+
+body, html {
+  background: #18181F;
+}
+
+body {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: Inter, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  padding: 1.25rem;
+  padding-bottom: 0.625rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar .navbar-logo {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  padding-top: 0;
+  gap: 0.625rem;
+}
+
+.block {
+  background: var(--background-light);
+  border-radius: 1.25rem;
+}
+
+.date-select {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.calorie-block {
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  padding: 1.625rem;
+}
+.calorie-block .calorie-graph {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: linear-gradient(var(--background-light), var(--background-light)) padding-box, conic-gradient(#49FF40 0%, #49FF40 30%, var(--accent) 30%, var(--accent) 50%, #FF40E5 50%, #FF40E5 100%) border-box;
+  border: 1.25rem solid transparent;
+  border-radius: 100vw;
+}
+.calorie-block .calorie-graph .numbers {
+  font-size: 2rem;
+}
+
+.calorie-list {
+  padding: 1rem;
+}
+.calorie-list .calorie-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+  color: var(--accent);
+  padding-bottom: 0.5rem;
+}
+.calorie-list .calorie-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-darker);
+}
+.calorie-list .calorie-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-darker);
+  font-size: 0.875rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+.calorie-list .calorie-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--accent);
+}
+
+footer {
+  position: relative;
+  background: var(--background-light);
+  height: 3rem;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  color: var(--accent);
+}
+footer .plus {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--background-light);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch style.sass style.css",
+    "start": "sass --watch styles/style.sass dist/style.css",
+    "build": "sass styles/style.sass dist/style.css",
     "livereload": "livereload"
   },
   "keywords": [],
