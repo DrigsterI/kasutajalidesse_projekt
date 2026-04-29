@@ -128,14 +128,13 @@ footer {
   height: 3rem;
   position: sticky;
   bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  place-items: center;
   color: var(--accent);
 }
 footer .plus {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,6 +144,64 @@ footer .plus {
   width: 50px;
   height: 50px;
   bottom: 8px;
+}
+
+.main-graph {
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr) max-content;
+  grid-template-columns: max-content repeat(5, 1fr);
+  place-items: center;
+}
+.main-graph .graph {
+  display: grid;
+  grid-column: 2/span 5;
+  grid-row: 1/span 3;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+}
+
+.main-calories {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.main-calories > div {
+  width: 100%;
+}
+.main-calories .calorie-stack {
+  display: flex;
+  place-items: center;
+}
+.main-calories .calorie-stack .progressbar {
+  width: 100%;
+  height: 0.875rem;
+  border: 1px solid var(--accent);
+  background: linear-gradient(to right, var(--accent) 0%, var(--accent) 50%, transparent 50%, transparent 100%);
+}
+.main-calories .calorie-stack.big {
+  font-size: 1.25rem;
+  flex-direction: column;
+}
+.main-calories .calorie-stack.small {
+  font-size: 0.875rem;
+}
+.main-calories .calorie-stack.small .progressbar {
+  height: 0.625rem;
+}
+.main-calories .calorie-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-calories .calorie-group .calorie-stack {
+  gap: 0.5rem;
+  display: grid;
+  grid-column: span 2;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
 }
 
 /*# sourceMappingURL=style.css.map */
