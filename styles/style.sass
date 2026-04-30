@@ -183,3 +183,18 @@ footer
             grid-column: span 2
             grid-template-rows: subgrid
             grid-template-columns: subgrid
+
+.main-workout
+    padding: .5rem
+    aspect-ratio: 1/1
+    display: grid
+    grid-template-rows: repeat(3, 1fr) max-content
+    grid-template-columns: max-content repeat(5, 1fr)
+    place-items: center
+
+.workout
+    display: grid
+    grid-column: 2 / span 5
+    grid-row: 1 / span 3
+    grid-template-rows: subgrid
+    grid-template-columns: subgrid
