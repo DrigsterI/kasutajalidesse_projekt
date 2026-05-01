@@ -40,6 +40,27 @@
 
       container.appendChild(newSetRow);
     }
+
+    function recalculateSets(container) {
+      const rows = container.querySelectorAll('.set-row');
+      rows.forEach((row, index) => {
+        row.querySelector('.set-number').textContent = index + 1;
+      });
+    }
+
+    function removeSet(button) {
+      const container = button.closest('.sets-container');
+      const row = button.closest('.set-row');
+
+      if (container.querySelectorAll('.set-row').length > 1) {
+        row.remove();
+        recalculateSets(container);
+      } else {
+        alert("There should be at least one set per exercise");
+      }
+
+    }
+
   </script>
 </head>
 
@@ -51,9 +72,9 @@
       <span form="exercise-form">Save</span>
     </nav>
   </header>
+
   <main class="main">
     <div class="block main-workout">
-      123123
       <form method="POST" id="exercise-form">
         <fieldset class="exercise-block">
           <legend>New exercise</legend>
@@ -65,7 +86,6 @@
         </fieldset>
 
         <template id="exercise-template">
-          <br>
           <fieldset class="exercise-block">
             <legend>New exercise</legend>
             <div class="sets-container">
@@ -74,6 +94,7 @@
                   <input type="number" name="reps[]" placeholder="reps">
                   <input type="number" name="weight[]" placeholder="weight (kg)">
                 </label>
+                <button type="button" class="delete-set-btn" onclick="removeSet(this)"> X</button>
               </div>
             </div>
 

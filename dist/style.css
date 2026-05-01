@@ -204,4 +204,70 @@ footer .plus {
   grid-template-columns: subgrid;
 }
 
+.exercise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exercise-block {
+  background-color: var(--background-light);
+  border: 1px solid #394650;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+.exercise-block legend {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.exercise-block input {
+  background: #18181F;
+  border: 1px solid var(--background);
+  color: var(--text);
+  padding: 5px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+.exercise-block input:focus {
+  outline: 2px solid #232b2e;
+}
+
+.delete-set-btn {
+  transition: all 0.1s;
+  padding-left: 1rem;
+}
+.delete-set-btn:hover {
+  color: #FF40E5;
+}
+.delete-set-btn:focus {
+  color: white;
+}
+
+.add-set-btn {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  margin-top: 1rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.add-set-btn:hover {
+  background-color: var(--accent) !important;
+  color: var(--background-light) !important;
+  transform: scale(0.95);
+}
+.add-set-btn:focus {
+  color: var(--background-light);
+  border: 1px solid var(--background-light);
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
