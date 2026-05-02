@@ -1,12 +1,20 @@
-function toggleOverlay() {
-    const overlay = document.getElementById('overlay-menu');
-    const plusBtn = document.querySelector('.plus');
+const overlay = document.querySelector('.overlay');
 
-    overlay.classList.toggle('active');
+function handleClick(e) {
+    if (e.target === overlay) {
+        closeOverlay();
+    }
 }
 
-document.getElementById('overlay-menu').addEventListener('click', function (e) {
-    if (e.target === this) {
-        this.classList.toggle('inactive');
-    }
-});
+function toggleOverlay() {
+    overlay.style.display = "flex";
+    overlay.style.opacity = "1";
+    overlay.addEventListener('click', handleClick);
+}
+
+function closeOverlay() {
+    overlay.style.opacity = '0';
+    overlay.style.display = 'none';
+
+    overlay.removeEventListener('click', handleClick);
+}
