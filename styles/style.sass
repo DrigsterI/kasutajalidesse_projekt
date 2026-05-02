@@ -242,16 +242,16 @@ footer
             outline: 2px solid var(--content-border)
 
 .delete-set-btn
-    transition: all 0.1s
     padding-left: 1rem
+    transition: all 0.1s
 
     &:hover
         color: #FF40E5
 
     &:focus
-        color: white
+        color: #ff0019
 
-.add-set-btn
+.exercise-form-btn
     width: 100%
     appearance: none
     background: transparent
@@ -365,14 +365,35 @@ footer
         transform: scale(0.95)
 
 @media (min-width: 1025px)
+    body
+        font-size: 1.5rem
+
     header
+        .navbar
+            font-size: 2rem
         svg
             width: 2rem
             height: 2rem
+
+    .main-calories
+        padding: 2rem
+        .calorie-stack
+            &.big
+                font-size: 1.75rem
+            &.small
+                font-size: 1.2rem
+
     .block
         width: 30vw
         margin-left: auto
         margin-right: auto
+
+        legend
+            font-size: 2rem
+
+        input
+            width: 30%
+            font-size: 1.2rem
 
         .workout-card
             font-size: 2rem
@@ -402,7 +423,7 @@ footer
             height: 4rem
 
     body
-        font-size: 2rem
+        font-size: 2.5rem
 
     .main
         padding-bottom: 5rem
@@ -428,7 +449,10 @@ footer
         margin-right: auto
 
         legend
-            font-size: 2rem
+            font-size: 2.5rem
+
+        input
+            width: 35%
 
     .workout-card
         font-size: 2rem
@@ -455,11 +479,15 @@ footer
                 padding: 2rem
 
     .navbar
-        font-size: 2.2rem
+        font-size: 3rem
 
     .date-select
         padding: 2rem
-        font-size: 4rem
+        font-size: 3.5rem
+    svg
+        width: 3.5rem
+        height: 3.5rem
+
     .calorie-block
 
         .calorie-graph

@@ -264,17 +264,17 @@ footer svg:hover {
 }
 
 .delete-set-btn {
-  transition: all 0.1s;
   padding-left: 1rem;
+  transition: all 0.1s;
 }
 .delete-set-btn:hover {
   color: #FF40E5;
 }
 .delete-set-btn:focus {
-  color: white;
+  color: #ff0019;
 }
 
-.add-set-btn {
+.exercise-form-btn {
   width: 100%;
   appearance: none;
   background: transparent;
@@ -286,12 +286,12 @@ footer svg:hover {
   cursor: pointer;
   transition: all 0.2s;
 }
-.add-set-btn:hover {
+.exercise-form-btn:hover {
   background-color: var(--accent) !important;
   color: var(--background-light) !important;
   transform: scale(0.95);
 }
-.add-set-btn:focus {
+.exercise-form-btn:focus {
   color: var(--background-light);
   border: 1px solid var(--background-light);
   background-color: white;
@@ -393,14 +393,36 @@ footer svg:hover {
 }
 
 @media (min-width: 1025px) {
+  body {
+    font-size: 1.5rem;
+  }
+  header .navbar {
+    font-size: 2rem;
+  }
   header svg {
     width: 2rem;
     height: 2rem;
+  }
+  .main-calories {
+    padding: 2rem;
+  }
+  .main-calories .calorie-stack.big {
+    font-size: 1.75rem;
+  }
+  .main-calories .calorie-stack.small {
+    font-size: 1.2rem;
   }
   .block {
     width: 30vw;
     margin-left: auto;
     margin-right: auto;
+  }
+  .block legend {
+    font-size: 2rem;
+  }
+  .block input {
+    width: 30%;
+    font-size: 1.2rem;
   }
   .block .workout-card {
     font-size: 2rem;
@@ -428,7 +450,7 @@ footer svg:hover {
     height: 4rem;
   }
   body {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .main {
     padding-bottom: 5rem;
@@ -454,7 +476,10 @@ footer svg:hover {
     margin-right: auto;
   }
   .block legend {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  .block input {
+    width: 35%;
   }
   .workout-card {
     font-size: 2rem;
@@ -480,11 +505,15 @@ footer svg:hover {
     padding: 2rem;
   }
   .navbar {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .date-select {
     padding: 2rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  svg {
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .calorie-block .calorie-graph {
     font-size: 2rem;
