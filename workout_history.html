@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="media/favicon.png">
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/style.css">
   <script>
@@ -50,32 +51,32 @@
   </header>
 
   <main class="main">
-    <section>
+    <section class="workout-history-section">
       <!-- <div class="block workout-history-container">
         <div class="workout-card">
           <div class="text-block">
-            <h1 class="day-name">Back day</h1>
+            <h3 class="day-name">Back day</h3>
             <div class="day-description">
               <span>week ago</span>
               <span>6 exercises</span>
               <span>35 min</span>
             </div>
           </div>
-          <img class="muscles-img" src="muscle-group.gif" alt="back muscle group gif">
+          <img class="muscles-img" src="media/muscle-group.gif" alt="back muscle group gif">
         </div>
 
       </div> -->
       <template id="history-template">
         <div class="block workout-card">
           <div class="text-block">
-            <h1 class="day-name"></h1>
+            <h3 class="day-name"></h3>
             <div class="day-description">
               <span class="workout-date"></span>
               <span class="exercises-amount"></span>
               <span class="time-spent"></span>
             </div>
           </div>
-          <img class="muscles-img" src="muscle-group.gif" alt=" muscle group gif">
+          <img class="muscles-img" src="media/muscle-group.gif" alt=" muscle group gif">
           <!-- I'm too lazy to create more gifs -->
         </div>
       </template>
@@ -92,13 +93,13 @@
         <path
           d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
       </svg></a>
-    <span onclick="toggleOverlay()" class="plus">
+    <button onclick="toggleOverlay()" class="plus">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus">
         <path d="M5 12h14" />
         <path d="M12 5v14" />
       </svg>
-    </span>
+    </button>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open">
       <path d="M12 7v14" />

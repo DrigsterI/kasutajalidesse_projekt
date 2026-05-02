@@ -2,6 +2,11 @@
 @use "overlay"
 @use "calories"
 
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+
 :root
     --background: linear-gradient(to bottom, #18181F 0%, #131327 100%)
     --background-light: #1F1F28
@@ -55,7 +60,6 @@ body
     border-radius: 1.25rem
     box-shadow: 5px 8px 8px var(--box-shadow)
 
-
 footer
     position: sticky
     background: var(--background-light)
@@ -71,9 +75,7 @@ footer
 
     .plus
         position: relative
-        display: flex
-        align-items: center
-        justify-content: center
+        @include flex-center
         background: var(--background-light)
         color: var(--accent)
         border: 1px solid var(--accent)
