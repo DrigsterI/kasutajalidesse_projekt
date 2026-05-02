@@ -5,6 +5,7 @@
     --text: #D9D9D9
     --text-darker: #A5A6A8
     --content-border: #232b2e
+    --box-shadow: #0d1116
 
 body, html
     background: #18181F
@@ -31,7 +32,7 @@ body
     align-items: center
     justify-content: space-between
     gap: 1rem
-    font-size: 18px
+    font-size: 1.125rem //18px
     font-weight: 600
 
     .navbar-logo
@@ -48,7 +49,7 @@ body
 .block
     background: var(--background-light)
     border-radius: 1.25rem
-    box-shadow: 5px 8px 8px #0d1116
+    box-shadow: 5px 8px 8px var(--box-shadow)
 
 .date-select
     padding: .5rem
@@ -125,18 +126,38 @@ footer
     place-items: center
     border-top: 1px solid var(--content-border)
     color: var(--accent)
+    box-shadow: 0px -3px 20px var(--box-shadow)
 
     .plus
         position: relative
         display: flex
         align-items: center
         justify-content: center
-        background: var(--accent)
-        color: var(--background-light)
+        background: var(--background-light)
+        color: var(--accent)
+        border: 1px solid var(--accent)
         border-radius: 50%
         width: 50px
         height: 50px
         bottom: 8px
+        cursor: pointer
+        box-shadow: 0px -5px 20px var(--box-shadow)
+        transition: all 0.2s ease
+
+        &:hover
+            color: var(--background-light)
+            background: var(--accent)
+            scale: 1.1
+
+        &:active
+            color: var(--background-light)
+            background: white
+            scale: 0.9
+
+    svg
+        transition: all 0.2s ease
+        &:hover
+            color: white
 
 .main-graph
     padding: .5rem
@@ -203,7 +224,7 @@ footer
 
     legend
         color: var(--accent)
-        font-size: 18px
+        font-size: 1.125rem
         font-weight: bold
         padding: 0 10px
 
@@ -214,6 +235,8 @@ footer
         padding: 5px
         border-radius: 8px
         line-height: 1.5
+        margin-left: 1rem
+        width: 30%
 
         &:focus
             outline: 2px solid var(--content-border)
@@ -298,18 +321,29 @@ footer
     height: 100%
     background: linear-gradient(to bottom, #1313274d 0%, #08080a84 100%)
     backdrop-filter: blur(5px)
-    display: none
+    display: flex
     flex-direction: column
     justify-content: flex-end
+    align-items: center
     padding-bottom: 5rem
     z-index: 150
     opacity: 0
+    visibility: hidden
+    transition: all 0.2s ease
+
+    &.active
+        opacity: 1
+        visibility: visible
 
 .overlay-buttons
     display: flex
     flex-direction: column
     gap: 1rem
     align-items: center
+    transition: transform 0.2s ease
+
+    &.active
+        transform: translateY(-5px)
 
 .action-btn
     appearance: none
@@ -329,3 +363,125 @@ footer
 
     &:hover
         transform: scale(0.95)
+
+@media (min-width: 1025px)
+    header
+        svg
+            width: 2rem
+            height: 2rem
+    .block
+        width: 30vw
+        margin-left: auto
+        margin-right: auto
+
+        .workout-card
+            font-size: 2rem
+
+        .text-block
+
+            .day-name
+                font-size: 2rem
+                font-weight: 700
+
+            .day-description
+                font-size: 1.5rem
+
+        .muscles-img
+            width: 50%
+
+    .overlay
+        align-items: center
+        .overlay-buttons
+            width: 30vw
+
+@media (min-width: 600px) and (max-width: 1024px)
+
+    header
+        svg
+            width: 4rem
+            height: 4rem
+
+    body
+        font-size: 2rem
+
+    .main
+        padding-bottom: 5rem
+
+    footer
+        height: 5rem
+        padding: 0 2rem 0
+
+        .plus
+            width: 5rem
+            height: 5rem
+            bottom: 1rem
+            border: solid 2px
+
+        svg
+            width: 3rem
+            height: 3rem
+            transition: all 0.2 ease
+
+    .block
+        width: 70vw
+        margin-left: auto
+        margin-right: auto
+
+        legend
+            font-size: 2rem
+
+    .workout-card
+        font-size: 2rem
+
+        .text-block
+
+            .day-name
+                font-size: 3rem
+                font-weight: 700
+
+            .day-description
+                font-size: 2rem
+
+        .muscles-img
+            width: 50%
+
+    .overlay
+        padding-bottom: 10vh
+        .overlay-buttons
+            width: 100vw
+
+            a
+                font-size: 3rem
+                padding: 2rem
+
+    .navbar
+        font-size: 2.2rem
+
+    .date-select
+        padding: 2rem
+        font-size: 4rem
+    .calorie-block
+
+        .calorie-graph
+            font-size: 2rem
+            .numbers
+                font-size: 4rem
+
+    .calorie-list
+        font-size: 2rem
+
+        .calorie-header
+            font-size: 3rem
+            svg
+                width: 3rem
+                height: 2.5rem
+
+        .calorie-item
+            font-size: 2.5rem
+        .calorie-footer
+            font-size: 2.5rem
+        .calorie-more
+            font-size: 2.5rem
+
+    .main-calories *
+        font-size: 2rem

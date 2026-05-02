@@ -12,12 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/style.css">
-  <script src="script.js"></script>
   <script>
     const workoutHistory = [
       { name: "Back Day", date: "3 days ago", exercises: "6", time: "45 min" },
       { name: "Leg Day", date: "1 week ago", exercises: "4", time: "60 min" },
-      { name: "Push Day", date: "2 weeks ago", exercises: "5", time: "40 min" }
+      { name: "Push Day", date: "2 weeks ago", exercises: "5", time: "40 min" },
+      { name: "Full Body", date: "3 weeks ago", exercises: "6", time: "55 min" }
     ];
 
     window.onload = function () {
@@ -40,7 +40,7 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <span>Good afternoon, [name]!</span>
+      <span>Workout history</span>
       <svg class="navbar-logo" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user">
         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -113,6 +113,7 @@
     </div>
   </div>
 </body>
+<script src="script.js"></script>
 
 <!-- Livereload -->
 <script>document.write('<script src="http://'
