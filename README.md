@@ -1,8 +1,8 @@
 ## Project idea
-The idea of the project is a comprehensive app for training and lifestyle "BeFit", developed as a universal solution for tracking sports lifestyle
+The Idea is an easy-to-use workout and lifestyle app, designed as a all-in-one solution for tracking healthy lifestyle
 
 ## Descrition
-The goal of the project is to create a platform that brings together all the essentials required to monitor a healthy lifestyle in one place: workout and meal logging, a steps counter, and a water tracker
+The goal of the project is to create a platform that brings together all the essentials required to monitor a healthy lifestyle in one place: workout and meal logging, a steps counter, and a water tracker. App is mainly focuses on mobile users,but is still usable on other devices as well
 
 ### authors
 Gabriel Jõe ja Maria Rjabtseva
