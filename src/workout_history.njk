@@ -1,0 +1,61 @@
+{% extends "base.njk" %}
+{% block title %}
+  Workout history
+{% endblock %}
+{% block head %}
+  <script>
+    window.onload = function () {
+      const temp = document.getElementById("history-template");
+      const container = document.querySelector(".workout-history-container");
+      workouts.forEach(data => {
+        const clone = temp.content.cloneNode(true);
+        clone.querySelector(".day-name").textContent = data.name;
+        clone.querySelector(".workout-date").textContent = data.date;
+        clone.querySelector(".exercises-amount").textContent = `${
+          data.excercises.length
+        } exercises`;
+        let excerciseList = clone.querySelector(".excercises-list");
+        data.excercises.forEach((excercise) => {
+          let excerciseElem = document.createElement("li");
+          excerciseElem.textContent = excercise.name;
+          excerciseList.appendChild(excerciseElem);
+        });
+        container.appendChild(clone);
+      });
+    }
+  </script>
+{% endblock %}
+{% block body %}
+  <section
+    class="workout-history-section">
+    <!-- <div class="block workout-history-container"> <div class="workout-card">
+        <div class="text-block">
+          <h1 class="day-name">Back day</h1>
+          <div class="day-description">
+            <span>week ago</span>
+            <span>6 exercises</span>
+            <span>35 min</span>
+          </div>
+        </div>
+        <img class="muscles-img" src="muscle-group.gif" alt="back muscle group gif">
+    </div> -->
+    <template id="history-template">
+      <div class="block workout-card">
+        <div class="text-block">
+          <h3 class="day-name"></h3>
+          <div class="day-description">
+            <span class="workout-date"></span>
+            <span class="exercises-amount"></span>
+            <ul class="excercises-list"></ul>
+          </div>
+        </div>
+        <img
+        class="muscles-img" src="img/muscle-group.gif" alt=" muscle group gif">
+      <!-- I'm too lazy to create more gifs -->
+      </div>
+    </template>
+    <div
+      class="workout-history-container"><!-- content here -->
+    </div>
+  </section>
+{% endblock %}

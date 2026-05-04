@@ -8,8 +8,7 @@
   background-color: var(--background-light);
   border: 1px solid #394650;
   border-radius: 1.25rem;
-  padding: 1.25rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem 1.25rem;
   justify-items: center;
 }
 .exercise-block legend, .workout-history legend {
@@ -18,18 +17,27 @@
   font-weight: bold;
   padding: 0 10px;
 }
-.exercise-block input, .workout-history input {
-  background: #18181F;
-  border: 1px solid var(--background);
-  color: var(--text);
-  padding: 5px;
-  border-radius: 8px;
-  line-height: 1.5;
-  margin-left: 1rem;
-  width: 30%;
+.exercise-block .sets-container, .workout-history .sets-container {
+  display: flex;
+  flex-direction: column;
 }
-.exercise-block input:focus, .workout-history input:focus {
-  outline: 2px solid var(--content-border);
+.exercise-block .sets-container .set-row .input-block, .workout-history .sets-container .set-row .input-block {
+  display: flex;
+  padding-inline: 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.exercise-block .sets-container .set-row:not(:last-child), .workout-history .sets-container .set-row:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--content-border);
+  margin-bottom: 1rem;
+}
+.exercise-block .set-header, .workout-history .set-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 .delete-set-btn {
@@ -54,6 +62,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s;
+  padding: 0.5rem 1rem;
 }
 .exercise-form-btn:hover {
   background-color: var(--accent) !important;
@@ -66,18 +75,22 @@
   background-color: white;
 }
 
+.exercise-save-btn {
+  max-width: 600px;
+  margin-top: 0.75rem;
+}
+
 .workout-history-container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .workout-card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.625rem;
   padding: 1rem;
-  margin-top: 1rem;
   transition: all 0.2s;
 }
 .workout-card .text-block {
@@ -97,6 +110,10 @@
   color: var(--text-darker);
   font-size: 0.875rem;
 }
+.workout-card .text-block .day-description .excercises-list {
+  list-style: disc outside;
+  padding-left: 1rem;
+}
 .workout-card .muscles-img {
   width: 40vw;
   border-radius: 0.2rem;
@@ -105,6 +122,28 @@
 }
 .workout-card:hover {
   filter: brightness(1.15);
+}
+
+.main-workout {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
+}
+.workout-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
 }
 
 .overlay {
@@ -336,15 +375,18 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1.25rem;
   padding-top: 0;
-  gap: 0.625rem;
+  gap: 1rem;
 }
 
 .block {
   background: var(--background-light);
   border-radius: 1.25rem;
   box-shadow: 5px 8px 8px var(--box-shadow);
+  max-width: 600px;
+  width: 100%;
 }
 
 footer {
@@ -392,158 +434,26 @@ footer svg {
 footer svg:hover {
   color: white;
 }
-
-@media (min-width: 1025px) {
-  body {
-    font-size: 1.5rem;
-  }
-  header .navbar {
-    font-size: 2rem;
-  }
-  header svg {
-    width: 2rem;
-    height: 2rem;
-  }
-  .main-calories {
-    padding: 2rem;
-  }
-  .main-calories .calorie-stack.big {
-    font-size: 1.75rem;
-  }
-  .main-calories .calorie-stack.small {
-    font-size: 1.2rem;
-  }
-  .block {
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .block legend {
-    font-size: 2rem;
-  }
-  .block input {
-    width: 30%;
-    font-size: 1.2rem;
-  }
-  .block .workout-card {
-    font-size: 2rem;
-  }
-  .block .text-block .day-name {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .block .text-block .day-description {
-    font-size: 1.5rem;
-  }
-  .block .muscles-img {
-    width: 50%;
-  }
-  .overlay {
-    align-items: center;
-  }
-  .overlay .overlay-buttons {
-    width: 30vw;
-  }
+footer .active {
+  color: white;
 }
-@media (min-width: 600px) and (max-width: 1024px) {
-  header svg {
-    width: 4rem;
-    height: 4rem;
-  }
-  body {
-    font-size: 2.5rem;
-  }
-  .main {
-    padding-bottom: 5rem;
-  }
-  footer {
-    height: 5rem;
-    padding: 0 2rem 0;
-  }
-  footer .plus {
-    width: 5rem;
-    height: 5rem;
-    bottom: 1rem;
-    border: solid 2px;
-  }
-  footer svg {
-    width: 3rem;
-    height: 3rem;
-    transition: all 0.2 ease;
-  }
-  .block {
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .block legend {
-    font-size: 2.5rem;
-  }
-  .block input {
-    width: 35%;
-  }
-  .workout-card {
-    font-size: 2rem;
-  }
-  .workout-card .text-block .day-name {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  .workout-card .text-block .day-description {
-    font-size: 2rem;
-  }
-  .workout-card .muscles-img {
-    width: 50%;
-  }
-  .overlay {
-    padding-bottom: 10vh;
-  }
-  .overlay .overlay-buttons {
-    width: 100vw;
-  }
-  .overlay .overlay-buttons a {
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  .navbar {
-    font-size: 3rem;
-  }
-  .date-select {
-    padding: 2rem;
-    font-size: 3.5rem;
-  }
-  svg {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .calorie-block .calorie-graph {
-    font-size: 2rem;
-  }
-  .calorie-block .calorie-graph .numbers {
-    font-size: 4rem;
-  }
-  .calorie-list {
-    font-size: 2rem;
-  }
-  .calorie-list .calorie-header {
-    font-size: 3rem;
-  }
-  .calorie-list .calorie-header svg {
-    width: 3rem;
-    height: 2.5rem;
-  }
-  .calorie-list .calorie-item {
-    font-size: 2.5rem;
-  }
-  .calorie-list .calorie-footer {
-    font-size: 2.5rem;
-  }
-  .calorie-list .calorie-more {
-    font-size: 2.5rem;
-  }
-  .main-calories * {
-    font-size: 2rem;
-  }
+
+.label-group {
+  display: block;
+}
+.label-group p {
+  margin-bottom: 0.125rem;
+}
+.label-group input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: #18181F;
+  border: 1px solid var(--background);
+  color: var(--text);
+  border-radius: 8px;
+}
+.label-group input:focus {
+  outline: 2px solid var(--content-border);
 }
 
 /*# sourceMappingURL=style.css.map */

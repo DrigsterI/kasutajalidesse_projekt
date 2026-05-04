@@ -7,8 +7,7 @@
     background-color: var(--background-light)
     border: 1px solid #394650
     border-radius: 1.25rem
-    padding: 1.25rem
-    margin-bottom: 1rem
+    padding: .5rem 1.25rem 1.25rem
     justify-items: center
 
     legend
@@ -17,18 +16,40 @@
         font-weight: bold
         padding: 0 10px
 
-    input
-        background: #18181F
-        border: 1px solid var(--background)
-        color: var(--text)
-        padding: 5px
-        border-radius: 8px
-        line-height: 1.5
-        margin-left: 1rem
-        width: 30%
+    .sets-container
+        display: flex
+        flex-direction: column
 
-        &:focus
-            outline: 2px solid var(--content-border)
+        .set-row
+            .input-block
+                display: flex
+                padding-inline: .5rem
+                flex-direction: column
+                gap: .5rem
+            &:not(:last-child)
+                padding-bottom: 1rem
+                border-bottom: 1px solid var(--content-border)
+                margin-bottom: 1rem
+
+    .set-header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 1rem
+        font-size: 1.5rem
+
+    // input
+    //     background: #18181F
+    //     border: 1px solid var(--background)
+    //     color: var(--text)
+    //     padding: 0.5rem 1rem
+    //     font-size: 1.5rem
+    //     border-radius: 8px
+    //     line-height: 1.5
+    //     width: 100% !important
+
+    //     &:focus
+    //         outline: 2px solid var(--content-border)
 
 .delete-set-btn
     padding-left: 1rem
@@ -52,6 +73,7 @@
     //justify-self: end
     cursor: pointer
     transition: all 0.2s
+    padding: 0.5rem 1rem
 
     &:hover
         background-color: var(--accent) !important
@@ -63,17 +85,20 @@
         border: 1px solid var(--background-light)
         background-color: white
 
+.exercise-save-btn
+    max-width: 600px
+    margin-top: 0.75rem
+
 .workout-history-container
-    margin-top: 1rem
     display: flex
     flex-direction: column
+    gap: 1rem
 
 .workout-card
-    display: flex
-    flex-direction: row
+    display: grid
+    grid-template-columns: 1fr 1fr
     gap: 0.625rem
     padding: 1rem
-    margin-top: 1rem
     transition: all 0.2s
 
     .text-block
@@ -92,6 +117,9 @@
             justify-items: left
             color: var(--text-darker)
             font-size: 0.875rem
+            .excercises-list
+                list-style: disc outside
+                padding-left: 1rem
 
     .muscles-img
         width: 40vw
@@ -101,3 +129,22 @@
 
     &:hover
         filter: brightness(1.15)
+
+.main-workout
+    padding: 1rem
+    display: flex
+    flex-direction: column
+    gap: .5rem
+
+.workout-grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1rem
+    justify-items: center
+    width: 100%
+    > div
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        max-width: 600px
+        width: 100%

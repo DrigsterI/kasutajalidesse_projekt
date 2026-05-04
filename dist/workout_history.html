@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <title>
+  Workout history
+    </title>
+    <meta name="description" content="Create o7 App"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>   <script>
+    window.onload = function () {
+      const temp = document.getElementById("history-template");
+      const container = document.querySelector(".workout-history-container");
+      workouts.forEach(data => {
+        const clone = temp.content.cloneNode(true);
+        clone.querySelector(".day-name").textContent = data.name;
+        clone.querySelector(".workout-date").textContent = data.date;
+        clone.querySelector(".exercises-amount").textContent = `${
+          data.excercises.length
+        } exercises`;
+        let excerciseList = clone.querySelector(".excercises-list");
+        data.excercises.forEach((excercise) => {
+          let excerciseElem = document.createElement("li");
+          excerciseElem.textContent = excercise.name;
+          excerciseList.appendChild(excerciseElem);
+        });
+        container.appendChild(clone);
+      });
+    }
+  </script>
+    </head>
+    <body>
+      <header class="header">
+        <nav class="navbar">
+          <span>
+Good afternoon, [name]!          </span>
+          <svg
+            class="navbar-logo"
+            width="28"
+            height="28"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-icon lucide-user">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </nav>
+      </header>
+      <main class="main">
+  <section
+    class="workout-history-section">
+    <!-- <div class="block workout-history-container"> <div class="workout-card">
+        <div class="text-block">
+          <h1 class="day-name">Back day</h1>
+          <div class="day-description">
+            <span>week ago</span>
+            <span>6 exercises</span>
+            <span>35 min</span>
+          </div>
+        </div>
+        <img class="muscles-img" src="muscle-group.gif" alt="back muscle group gif">
+    </div> -->
+    <template id="history-template">
+      <div class="block workout-card">
+        <div class="text-block">
+          <h3 class="day-name"></h3>
+          <div class="day-description">
+            <span class="workout-date"></span>
+            <span class="exercises-amount"></span>
+            <ul class="excercises-list"></ul>
+          </div>
+        </div>
+        <img
+        class="muscles-img" src="img/muscle-group.gif" alt=" muscle group gif">
+      <!-- I'm too lazy to create more gifs -->
+      </div>
+    </template>
+    <div
+      class="workout-history-container"><!-- content here -->
+    </div>
+  </section>
+      </main>
+      <footer>
+        <a id="home" href="index.html">
+          <svg
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-house-icon lucide-house">
+            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+            <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          </svg>
+        </a>
+        <span onclick="toggleOverlay()" class="plus">
+          <svg
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-plus-icon lucide-plus">
+            <path d="M5 12h14"/>
+            <path d="M12 5v14"/>
+          </svg>
+        </span>
+        <a id="workouts" href="workout_history.html">
+          <svg
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-book-open-icon lucide-book-open">
+            <path d="M12 7v14"/>
+            <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3
+            3 0 0 0-3-3z"/>
+          </svg>
+        </a>
+      </footer>
+      <div id="overlay-menu" class="overlay">
+        <div class="overlay-buttons">
+          <a href="addworkout.html" class="action-btn">New Workout</a>
+          <a href="calories.html" class="action-btn">Log Meal</a>
+        </div>
+      </div>
+    </body>
+    <script src="../script.js"></script>
+    <!-- Livereload -->
+    <script>
+      document.write('<script src="http://' + (
+        location.host || "localhost"
+      ).split(":")[0] + ':35729/livereload.js"><\/script>',);
+    </script>
+  </html>
