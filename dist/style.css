@@ -5,21 +5,25 @@
   align-self: stretch;
   border-bottom: 1px solid var(--text);
   background: var(--background);
-  box-shadow: 0 4px 10px 6px rgba(59, 19, 28, 0.14);
+  box-shadow: 0 5px 10px rgba(59, 19, 28, 0.101);
+  padding-bottom: 1rem;
 }
 .movie_section .poster {
   display: flex;
-  width: 25%;
+  width: 30%;
   height: 100%;
   padding: 10px 0;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+  margin: 0;
 }
 .movie_section .poster img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(59, 19, 28, 0.05);
 }
 .movie_section .poster figcaption {
   font-size: 0.8rem;
@@ -54,17 +58,76 @@
 .movie_section .movie_info .movie_cast dt {
   font-weight: bold;
 }
-.movie_section .ratings {
+.movie_section .ratings_block {
   display: flex;
-  width: 25%;
-  height: 100%;
-  padding: 10px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 25%;
+  height: 100%;
   gap: 10px;
-  flex: 1 0 0;
   font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.movie_section .ratings_block .ratings_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  border-left: var(--accent) solid 1px;
+}
+.movie_section .ratings_block .ratings_content h2 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin: 0;
+}
+.movie_section .ratings_block .ratings_content ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.movie_section .ratings_block .ratings_content .rating_source_name {
+  font-size: 1.3rem;
+}
+.movie_section .ratings_block .ratings_content .rating {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.movie_showtimes_section {
+  width: 100vw;
+  background: var(--background-light);
+  display: flex;
+  height: 536px;
+  padding: 50px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.movie_showtimes_section .sessions-grid {
+  display: flex;
+  padding: 58px 100px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.movie_showtimes_section .sessions-grid .sessions-list {
+  list-style: none;
+  border-left: var(--text) solid 1px;
+}
+.movie_showtimes_section .sessions-grid .sessions-list:first-of-type {
+  border: none;
 }
 
 :root {
@@ -96,7 +159,7 @@ body {
 
 .header {
   background: var(--background);
-  border-bottom: 1px solid var(--content-border);
+  border-bottom: 2px dashed var(--content-border);
 }
 
 .navbar {

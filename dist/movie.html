@@ -39,8 +39,8 @@
       <figure class="poster">
         <img src="../logan_poster.png"
           alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws bared, and the sun is setting behind him.">
-        <figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
-          camera, claws bared, and the sun is setting behind him.</figcaption>
+        <!--<figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
+          camera, claws bared, and the sun is setting behind him.</figcaption>-->
       </figure>
       <article class="movie_info">
         <div class="movie_info_text">
@@ -55,6 +55,11 @@
           </div>
         </div>
         <div class="movie_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -75,24 +80,55 @@
           </dl>
         </div>
       </article>
-      <aside class="ratings">
-        <div class="rotten_tomatoes_rating">rotten_tomatoes_rating</div>
-        <div class="imdb_rating">imdb_rating</div>
-        <div class="kinogo_rating">kinogo_rating</div>
+      <aside class="ratings_block">
+        <div class="ratings_content">
+          <h2>Ratings</h2>
+          <ul class="rating_list">
+            <li class="rating_source_name">rotten tomatoes:</li>
+            <li class="rating">93% / 100%</li>
+            <li class="rating_source_name">imdb:</li>
+            <li class="rating">8.1 / 10</li>
+            <li class="rating_source_name">kinogo:</li>
+            <li class="rating">9 / 10</li>
+          </ul>
+
+        </div>
       </aside>
     </section>
-    <section class="movie_showtimes">
+    <section class="movie_showtimes_section">
       <h2>SHOWTIMES</h2>
-      <ul class="sessions-grid">
-        <li class="session">
-          <time>17:00</time>
-          <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
-        </li>
-        <li class="session">
-          <time>18:00</time>
-          <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
-        </li>
-      </ul>
+      <div class="sessions-grid">
+        <ul class="sessions-list">
+          <li class="session">
+            <time>17:00</time>
+            <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+          </li>
+          <li class="session">
+            <time>18:00</time>
+            <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+          </li>
+        </ul>
+        <ul class="sessions-list">
+          <li class="session">
+            <time>19:00</time>
+            <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+          </li>
+          <li class="session">
+            <time>20:00</time>
+            <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+          </li>
+        </ul>
+        <ul class="sessions-list">
+          <li class="session">
+            <time>21:00</time>
+            <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+          </li>
+          <li class="session">
+            <time>22:00</time>
+            <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </body>
