@@ -1,0 +1,28 @@
+{
+  "name": "project-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run watch:njk\" \"npm run watch:sass\" \"npm run livereload\"",
+    "watch:njk": "nunjucks \"*.njk\" -p src -o dist -w",
+    "watch:sass": "sass --watch styles/style.sass dist/style.css",
+    "build": "npm run build:njk && npm run build:sass",
+    "build:njk": "nunjucks \"*.njk\" -p src -o dist",
+    "build:sass": "sass styles/style.sass dist/style.css",
+    "livereload": "livereload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "livereload": "^0.10.3",
+    "nunjucks": "^3.2.4",
+    "nunjucks-cli": "^1.0.0",
+    "sass": "^1.99.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
