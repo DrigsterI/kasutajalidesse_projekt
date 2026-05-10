@@ -1,10 +1,72 @@
+.movie_section {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--text);
+  background: var(--background);
+  box-shadow: 0 4px 10px 6px rgba(59, 19, 28, 0.14);
+}
+.movie_section .poster {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.movie_section .poster img {
+  width: 100%;
+}
+.movie_section .movie_info {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 10px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.movie_section .movie_info h1 {
+  color: var(--accent);
+  font-family: "Playfair Display";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.movie_section .movie_info .release_info {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  align-self: stretch;
+}
+.movie_section .movie_info .movie_description {
+  text-wrap: pretty;
+}
+.movie_section .movie_info .movie_role_name {
+  font-weight: bold;
+}
+.movie_section .ratings {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  padding: 10px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+
 :root {
   --background: #FAEBCE;
   --background-light: #FBFBE7;
   --accent: #9D3048;
-  --text: #000000;
+  --text: #2A2F2E;
   --text-darker: #000000;
-  --content-border: #000000;
+  --content-border: #2A2F2E;
 }
 
 body, html {
