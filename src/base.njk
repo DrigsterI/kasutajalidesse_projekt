@@ -7,11 +7,40 @@
       {% block title %}{% endblock %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/> {% block head %}{% endblock %}
     </head>
     <body>
+      <header class="header">
+        <nav class="navbar">
+          <a class="logo" href="index.html">
+            KINO.GO
+          </a>
+          <div class="group">
+            <a class="tickets" href="tickets.html">My tickets</a>
+            <svg
+              class="profile"
+              width="28"
+              height="28"
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user-icon lucide-user">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+        </nav>
+      </header>
       <main class="main">
         {% block body %}Hello World{% endblock %}
       </main>
