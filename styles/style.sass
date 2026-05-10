@@ -1,4 +1,5 @@
-@import movie
+@use "movie"
+
 $font-accent: "Playfair Display", serif
 $font-main: "Karla", sans-serif
 
@@ -9,6 +10,8 @@ $font-main: "Karla", sans-serif
     --text: #2A2F2E
     --text-darker: #000000
     --content-border: #2A2F2E
+
+    --max-width: 1400px
 
 body, html
     background: var(--background)
@@ -27,6 +30,11 @@ body
     font-weight: 400
     font-style: normal
 
+section
+    max-width: var(--max-width)
+    width: 100%
+    margin: 0 auto
+
 .header
     background: var(--background)
     border-bottom: 2px dashed var(--content-border)
@@ -38,9 +46,9 @@ body
     gap: 1rem
     font-size: 1.125rem //18px
     font-weight: 600
-    max-width: 1200px
+    max-width: var(--max-width)
     width: 100%
-    padding: .5rem
+    padding-block: 1.25rem
     margin: 0 auto
 
     .group
