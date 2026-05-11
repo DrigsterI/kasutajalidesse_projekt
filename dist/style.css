@@ -140,7 +140,7 @@
 }
 
 body, html {
-  background: var(--background);
+  background: var(--background-light);
 }
 
 body {
@@ -150,22 +150,11 @@ body {
   grid-template-rows: auto 1fr auto;
   font-family: Inter, sans-serif;
   color: var(--text);
-  background: var(--background);
+  background: var(--background-light);
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-section {
-  max-width: var(--max-width);
-  width: 100%;
-  margin: 0 auto;
-}
-
-.header {
-  background: var(--background);
-  border-bottom: 2px dashed var(--content-border);
 }
 
 .navbar {
@@ -177,8 +166,10 @@ section {
   font-weight: 600;
   max-width: var(--max-width);
   width: 100%;
-  padding-block: 1.25rem;
+  padding: 1.25rem;
   margin: 0 auto;
+  border-bottom: 2px dashed var(--content-border);
+  background: var(--background);
 }
 .navbar .group {
   display: flex;
@@ -212,50 +203,36 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.25rem;
   padding-top: 0;
-}
-
-.carousel-section {
+  background: var(--background);
   max-width: var(--max-width);
   width: 100%;
+  margin: 0 auto;
+  gap: 1rem;
 }
-.carousel-section h2 {
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
+
+section {
+  width: 100%;
+  padding: 1.25rem;
 }
 
 .carousel-shell {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 0.75rem;
-}
-
-.carousel-shell [data-carousel-prev] {
-  grid-column: 1;
-}
-
-.carousel-shell [data-carousel-next] {
-  grid-column: 3;
 }
 
 .carousel-button {
-  inline-size: 2.5rem;
-  block-size: 2.5rem;
-  border: 1px solid var(--content-border);
-  border-radius: 999px;
-  background: var(--background-light);
+  height: 100%;
+  width: 2rem;
   color: var(--text);
-  font-size: 1.125rem;
-  line-height: 1;
-  place-self: center;
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 .carousel-button:hover {
   background: #ffffff;
-  transform: translateY(-1px);
+}
+.carousel-button svg {
+  margin: auto;
 }
 
 .poster-carousel {
@@ -268,7 +245,6 @@ section {
   overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
-  grid-column: 2;
 }
 
 .poster-slide {
@@ -297,8 +273,8 @@ section {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  inline-size: 2.25rem;
-  block-size: 2.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   color: #ffffff;
   opacity: 0;
   transition: opacity 0.25s ease;
@@ -311,7 +287,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  top: 50%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 80%);
   pointer-events: none;
 }
@@ -370,25 +346,25 @@ section {
   padding-block: 2rem;
 }
 
-.movie-request-form {
-  padding: 2rem;
+.request-form {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.form-group {
+.input-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.form-group label {
+.input-group label {
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--text);
 }
-.form-group input,
-.form-group textarea {
+.input-group input,
+.input-group textarea {
   padding: 0.75rem;
   border: 1px solid var(--content-border);
   border-radius: 4px;
@@ -398,14 +374,14 @@ section {
   background: #ffffff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.form-group input:focus,
-.form-group textarea:focus {
+.input-group input:focus,
+.input-group textarea:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(157, 48, 72, 0.1);
 }
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+.input-group input::placeholder,
+.input-group textarea::placeholder {
   color: #999999;
 }
 
@@ -413,19 +389,24 @@ section {
   padding: 0.875rem 1.5rem;
   background: var(--accent);
   color: #ffffff;
-  border: none;
   border-radius: 4px;
   font-weight: 600;
   font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 .form-submit-button:hover {
   background: #b83b5a;
-  transform: translateY(-2px);
 }
-.form-submit-button:active {
-  transform: translateY(0);
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 2px dashed var(--text);
 }
 
 /*# sourceMappingURL=style.css.map */
