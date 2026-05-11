@@ -1,5 +1,12 @@
 @use "movie"
 
+@mixin form-style
+    padding: 1rem
+    display: flex
+    flex-direction: column
+    gap: 1.5rem
+    width: 80%
+
 $font-accent: "Playfair Display", serif
 $font-main: "Karla", sans-serif
 
@@ -10,6 +17,7 @@ $font-main: "Karla", sans-serif
     --text: #2A2F2E
     --text-darker: #000000
     --content-border: #2A2F2E
+    --ticket-mask: radial-gradient(0.5rem at 50% calc(100% - 0.1rem),#0000 99%,#000 101%) calc(50% - 1rem) 0/1.45rem 100%, radial-gradient(0.69rem at 50% calc(100% + 0.47rem),#000 99%,#0000 101%) 50% calc(100% - 0.5rem)/2rem 100% repeat-x
 
     --max-width: 1400px
 
@@ -75,7 +83,7 @@ body
     flex-direction: column
     align-items: center
     padding-top: 0
-    background: var(--background)
+    background: var(--background-light)
     max-width: var(--max-width)
     width: 100%
     margin: 0 auto
@@ -84,6 +92,12 @@ body
 section
     width: 100%
     padding: 1.25rem
+
+.movies_list_wrapper
+    background: var(--background)
+    padding-bottom: 2rem
+    -webkit-mask: var(--ticket-mask)
+    mask: var(--ticket-mask)
 
 .carousel-shell
     display: grid
@@ -210,10 +224,7 @@ section
     padding-block: 2rem
 
 .request-form
-    padding: 1rem
-    display: flex
-    flex-direction: column
-    gap: 1.5rem
+    @include form-style
 
 .input-group
     display: flex
