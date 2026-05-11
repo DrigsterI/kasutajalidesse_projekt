@@ -87,7 +87,7 @@ body
     max-width: var(--max-width)
     width: 100%
     margin: 0 auto
-    gap: 1rem
+    //gap: 1rem
 
 section
     width: 100%
@@ -276,13 +276,32 @@ section
     font-weight: 300
     text-transform: uppercase
 
-.divider
-    width: 100%
-    border-bottom: 2px dashed var(--text)
+.hero-section
+    background: var(--background)
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 40vh
+    padding: 2rem 1.25rem
+    border-bottom: dashed 2px var(--text)
+
+.hero-title
+    font-size: clamp(3rem, 8vw, 4rem)
+    margin-bottom: 1rem
+    line-height: 1.1
+
+.hero-intro-text
+    font-size: clamp(1.7rem, 2.5vw, 1.25rem)
+    line-height: 1.5
+    margin-bottom: 2rem
+    opacity: 0.9
+    margin-left: auto
+    margin-right: auto
 
 @media (max-width: 768px)
-    .main
-        gap: 2rem
+    .hero-title
+        font-weight: 800
 
     .navbar
         flex-direction: column
@@ -375,11 +394,22 @@ section
 
 @media (min-width: 768px) and (max-width: 1366px) //tablet
 
+    .hero-title
+        font-size: clamp(5rem, 10vw, 6rem)
+        font-weight: 500
+
+    .hero-intro-text
+        font-size: clamp(2rem, 4vw, 3rem)
+
+    .navbar
+        flex-direction: row
+        gap: 0.5rem
+        text-align: center
+
     .poster-carousel
         --min-col-size: 400px
 
     .movie_section_wrapper
-        display: block
 
         .movie_section
             flex-direction: column
