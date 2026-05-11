@@ -1,318 +1,574 @@
 {% extends "base.njk" %}
 {% block title %}
-  Main Page
+    Main Page
 {% endblock %}
 {% block body %}
-  <section class="carousel-section" aria-label="Now playing movies">
-    <h2>Now playing</h2>
-    <div class="carousel-shell">
-      <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll posters left">&larr;</button>
-      <div id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
-        <a class="poster-slide" href="#" aria-label="Open movie details for Dune: Part Two">
-          <img
-            src="https://picsum.photos/seed/dune-poster/600/800"
-            alt="Dune: Part Two poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Dune: Part Two</span>
-          <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Oppenheimer">
-          <img
-            src="https://picsum.photos/seed/oppenheimer-poster/600/800"
-            alt="Oppenheimer poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Oppenheimer</span>
-          <span class="poster-description">The atomic bomb scientist's journey</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Killers of the Flower Moon">
-          <img
-            src="https://picsum.photos/seed/flower-moon-poster/600/800"
-            alt="Killers of the Flower Moon poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Killers of the Flower Moon</span>
-          <span class="poster-description">A story of greed and survival in Oklahoma</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Past Lives">
-          <img
-            src="https://picsum.photos/seed/past-lives-poster/600/800"
-            alt="Past Lives poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Past Lives</span>
-          <span class="poster-description">A love story across time and continents</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for The Zone of Interest">
-          <img
-            src="https://picsum.photos/seed/zone-interest-poster/600/800"
-            alt="The Zone of Interest poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">The Zone of Interest</span>
-          <span class="poster-description">A haunting WWII historical drama</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Barbie">
-          <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Barbie</span>
-          <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for The Holdovers">
-          <img
-            src="https://picsum.photos/seed/holdovers-poster/600/800"
-            alt="The Holdovers poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">The Holdovers</span>
-          <span class="poster-description">A Christmas break bonding story at boarding school</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Anatomy of a Fall">
-          <img
-            src="https://picsum.photos/seed/anatomy-fall-poster/600/800"
-            alt="Anatomy of a Fall poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Anatomy of a Fall</span>
-          <span class="poster-description">A gripping legal thriller and marriage mystery</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Poor Things">
-          <img
-            src="https://picsum.photos/seed/poor-things-poster/600/800"
-            alt="Poor Things poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Poor Things</span>
-          <span class="poster-description">A surreal gothic romance with wild imagination</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Spider-Man: Across the Spider-Verse">
-          <img
-            src="https://picsum.photos/seed/spiderverse-poster/600/800"
-            alt="Spider-Man: Across the Spider-Verse poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
-          <span class="poster-description">Miles Morales jumps across the multiverse</span>
-        </a>
-      </div>
-      <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll posters right">&rarr;</button>
+    <div class="movies_list_wrapper">
+        <section class="carousel-section" aria-label="Now playing movies">
+            <h2 class="section-title">Now playing</h2>
+            <div class="carousel-shell">
+                <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll now playing posters left">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                        aria-hidden="true"><path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <ul id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Dune: Part Two">
+                            <img
+                                src="https://picsum.photos/seed/dune-poster/600/800"
+                                alt="Dune: Part Two poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Dune: Part Two</span>
+                            <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Oppenheimer">
+                            <img
+                                src="https://picsum.photos/seed/oppenheimer-poster/600/800"
+                                alt="Oppenheimer poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Oppenheimer</span>
+                            <span class="poster-description">The atomic bomb scientist's journey</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Killers of the Flower Moon">
+                            <img
+                                src="https://picsum.photos/seed/flower-moon-poster/600/800"
+                                alt="Killers of the Flower Moon poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Killers of the Flower Moon</span>
+                            <span class="poster-description">A story of greed and survival in Oklahoma</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Past Lives">
+                            <img
+                                src="https://picsum.photos/seed/past-lives-poster/600/800"
+                                alt="Past Lives poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Past Lives</span>
+                            <span class="poster-description">A love story across time and continents</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for The Zone of Interest">
+                            <img
+                                src="https://picsum.photos/seed/zone-interest-poster/600/800"
+                                alt="The Zone of Interest poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">The Zone of Interest</span>
+                            <span class="poster-description">A haunting WWII historical drama</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Barbie">
+                            <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Barbie</span>
+                            <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for The Holdovers">
+                            <img
+                                src="https://picsum.photos/seed/holdovers-poster/600/800"
+                                alt="The Holdovers poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">The Holdovers</span>
+                            <span class="poster-description">A Christmas break bonding story at boarding school</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Anatomy of a Fall">
+                            <img
+                                src="https://picsum.photos/seed/anatomy-fall-poster/600/800"
+                                alt="Anatomy of a Fall poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Anatomy of a Fall</span>
+                            <span class="poster-description">A gripping legal thriller and marriage mystery</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Poor Things">
+                            <img
+                                src="https://picsum.photos/seed/poor-things-poster/600/800"
+                                alt="Poor Things poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Poor Things</span>
+                            <span class="poster-description">A surreal gothic romance with wild imagination</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Spider-Man: Across the Spider-Verse">
+                            <img
+                                src="https://picsum.photos/seed/spiderverse-poster/600/800"
+                                alt="Spider-Man: Across the Spider-Verse poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
+                            <span class="poster-description">Miles Morales jumps across the multiverse</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll now playing posters right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                        aria-hidden="true"><path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="carousel-section" aria-label="Coming soon movies">
+            <h2 class="section-title">Coming soon</h2>
+            <div class="carousel-shell">
+                <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll now playing posters left">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                        aria-hidden="true"><path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <ul id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Dune: Part Two">
+                            <img
+                                src="https://picsum.photos/seed/dune-poster/600/800"
+                                alt="Dune: Part Two poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Dune: Part Two</span>
+                            <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Oppenheimer">
+                            <img
+                                src="https://picsum.photos/seed/oppenheimer-poster/600/800"
+                                alt="Oppenheimer poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Oppenheimer</span>
+                            <span class="poster-description">The atomic bomb scientist's journey</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Killers of the Flower Moon">
+                            <img
+                                src="https://picsum.photos/seed/flower-moon-poster/600/800"
+                                alt="Killers of the Flower Moon poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Killers of the Flower Moon</span>
+                            <span class="poster-description">A story of greed and survival in Oklahoma</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Past Lives">
+                            <img
+                                src="https://picsum.photos/seed/past-lives-poster/600/800"
+                                alt="Past Lives poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Past Lives</span>
+                            <span class="poster-description">A love story across time and continents</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for The Zone of Interest">
+                            <img
+                                src="https://picsum.photos/seed/zone-interest-poster/600/800"
+                                alt="The Zone of Interest poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">The Zone of Interest</span>
+                            <span class="poster-description">A haunting WWII historical drama</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Barbie">
+                            <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Barbie</span>
+                            <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for The Holdovers">
+                            <img
+                                src="https://picsum.photos/seed/holdovers-poster/600/800"
+                                alt="The Holdovers poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">The Holdovers</span>
+                            <span class="poster-description">A Christmas break bonding story at boarding school</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Anatomy of a Fall">
+                            <img
+                                src="https://picsum.photos/seed/anatomy-fall-poster/600/800"
+                                alt="Anatomy of a Fall poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Anatomy of a Fall</span>
+                            <span class="poster-description">A gripping legal thriller and marriage mystery</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Poor Things">
+                            <img
+                                src="https://picsum.photos/seed/poor-things-poster/600/800"
+                                alt="Poor Things poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Poor Things</span>
+                            <span class="poster-description">A surreal gothic romance with wild imagination</span>
+                        </a>
+                    </li>
+                    <li class="poster-slide">
+                        <a href="movie.html" aria-label="Open movie details for Spider-Man: Across the Spider-Verse">
+                            <img
+                                src="https://picsum.photos/seed/spiderverse-poster/600/800"
+                                alt="Spider-Man: Across the Spider-Verse poster"
+                                loading="lazy"
+                                width="600"
+                                height="800">
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
+                            <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
+                            <span class="poster-description">Miles Morales jumps across the multiverse</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll now playing posters right">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                        aria-hidden="true"><path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="divider"></div>
     </div>
-  </section>
-  <section class="carousel-section" aria-label="Now playing movies">
-    <h2>Comming soon</h2>
-    <div class="carousel-shell">
-      <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll posters left">&larr;</button>
-      <div id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
-        <a class="poster-slide" href="#" aria-label="Open movie details for Dune: Part Two">
-          <img
-            src="https://picsum.photos/seed/dune-poster/600/800"
-            alt="Dune: Part Two poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Dune: Part Two</span>
-          <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Oppenheimer">
-          <img
-            src="https://picsum.photos/seed/oppenheimer-poster/600/800"
-            alt="Oppenheimer poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Oppenheimer</span>
-          <span class="poster-description">The atomic bomb scientist's journey</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Killers of the Flower Moon">
-          <img
-            src="https://picsum.photos/seed/flower-moon-poster/600/800"
-            alt="Killers of the Flower Moon poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Killers of the Flower Moon</span>
-          <span class="poster-description">A story of greed and survival in Oklahoma</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Past Lives">
-          <img
-            src="https://picsum.photos/seed/past-lives-poster/600/800"
-            alt="Past Lives poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Past Lives</span>
-          <span class="poster-description">A love story across time and continents</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for The Zone of Interest">
-          <img
-            src="https://picsum.photos/seed/zone-interest-poster/600/800"
-            alt="The Zone of Interest poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">The Zone of Interest</span>
-          <span class="poster-description">A haunting WWII historical drama</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Barbie">
-          <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Barbie</span>
-          <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for The Holdovers">
-          <img
-            src="https://picsum.photos/seed/holdovers-poster/600/800"
-            alt="The Holdovers poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">The Holdovers</span>
-          <span class="poster-description">A Christmas break bonding story at boarding school</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Anatomy of a Fall">
-          <img
-            src="https://picsum.photos/seed/anatomy-fall-poster/600/800"
-            alt="Anatomy of a Fall poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Anatomy of a Fall</span>
-          <span class="poster-description">A gripping legal thriller and marriage mystery</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Poor Things">
-          <img
-            src="https://picsum.photos/seed/poor-things-poster/600/800"
-            alt="Poor Things poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Poor Things</span>
-          <span class="poster-description">A surreal gothic romance with wild imagination</span>
-        </a>
-        <a class="poster-slide" href="#" aria-label="Open movie details for Spider-Man: Across the Spider-Verse">
-          <img
-            src="https://picsum.photos/seed/spiderverse-poster/600/800"
-            alt="Spider-Man: Across the Spider-Verse poster"
-            loading="lazy"
-            width="600"
-            height="800">
-          <svg class="poster-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-          </svg>
-          <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
-          <span class="poster-description">Miles Morales jumps across the multiverse</span>
-        </a>
-      </div>
-      <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll posters right">&rarr;</button>
-    </div>
-  </section>
-  <div class="form-section-wrapper">
-    <section class="carousel-section" aria-label="Request a movie">
-      <h2>Request a Movie</h2>
-      <form class="movie-request-form">
-        <div class="form-group">
-          <label for="movie-name">Movie Name</label>
-          <input type="text" id="movie-name" name="movieName" placeholder="Enter movie title" required>
-        </div>
-        <div class="form-group">
-          <label for="studio-name">Studio Name</label>
-          <input type="text" id="studio-name" name="studioName" placeholder="Enter studio name" required>
-        </div>
-        <div class="form-group">
-          <label for="user-name">Your Full Name</label>
-          <input type="text" id="user-name" name="userName" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group">
-          <label for="comment">Comment</label>
-          <textarea id="comment" name="comment" placeholder="Share your thoughts or why you'd like this movie" rows="4"></textarea>
-        </div>
-        <button type="submit" class="form-submit-button">Submit Request</button>
-      </form>
+    <section>
+        <h2 class="section-title">Request a Movie</h2>
+        <form class="request-form">
+            <div class="input-group">
+                <label for="movie-name">Movie Name<span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="movie-name" name="movieName" placeholder="Enter movie title" required></div>
+            <div class="input-group">
+                <label for="studio-name">Studio Name<span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="studio-name" name="studioName" placeholder="Enter studio name" required></div>
+            <div class="input-group">
+                <label for="user-name">Your Full Name</label>
+                <input type="text" id="user-name" name="userName" placeholder="Enter your full name"></div>
+            <div class="input-group">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" placeholder="Share your thoughts or why you'd like this movie" rows="4"></textarea>
+            </div>
+            <button type="submit" class="form-submit-button">Submit Request</button>
+        </form>
     </section>
-  </div>
 {% endblock %}
