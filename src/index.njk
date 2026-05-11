@@ -1,14 +1,26 @@
 {% extends "base.njk" %}
 {% block title %}
-  Main Page
+    Main Page
 {% endblock %}
 {% block body %}
-    <div class="movies_list_wrapper"
+    <div class="movies_list_wrapper">
         <section class="carousel-section" aria-label="Now playing movies">
             <h2 class="section-title">Now playing</h2>
             <div class="carousel-shell">
                 <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll now playing posters left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                        aria-hidden="true"><path d="m15 18-6-6 6-6"/>
+                    </svg>
                 </button>
                 <ul id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
                     <li class="poster-slide">
@@ -19,7 +31,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Dune: Part Two</span>
                             <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
                         </a>
@@ -32,7 +55,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Oppenheimer</span>
                             <span class="poster-description">The atomic bomb scientist's journey</span>
                         </a>
@@ -45,7 +79,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Killers of the Flower Moon</span>
                             <span class="poster-description">A story of greed and survival in Oklahoma</span>
                         </a>
@@ -58,7 +103,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Past Lives</span>
                             <span class="poster-description">A love story across time and continents</span>
                         </a>
@@ -71,7 +127,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">The Zone of Interest</span>
                             <span class="poster-description">A haunting WWII historical drama</span>
                         </a>
@@ -79,7 +146,18 @@
                     <li class="poster-slide">
                         <a href="movie.html" aria-label="Open movie details for Barbie">
                             <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Barbie</span>
                             <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
                         </a>
@@ -92,7 +170,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">The Holdovers</span>
                             <span class="poster-description">A Christmas break bonding story at boarding school</span>
                         </a>
@@ -105,7 +194,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Anatomy of a Fall</span>
                             <span class="poster-description">A gripping legal thriller and marriage mystery</span>
                         </a>
@@ -118,7 +218,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Poor Things</span>
                             <span class="poster-description">A surreal gothic romance with wild imagination</span>
                         </a>
@@ -131,14 +242,37 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
                             <span class="poster-description">Miles Morales jumps across the multiverse</span>
                         </a>
                     </li>
                 </ul>
                 <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll now playing posters right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                        aria-hidden="true"><path d="m9 18 6-6-6-6"/>
+                    </svg>
                 </button>
             </div>
         </section>
@@ -146,7 +280,19 @@
             <h2 class="section-title">Coming soon</h2>
             <div class="carousel-shell">
                 <button class="carousel-button" type="button" data-carousel-prev aria-label="Scroll now playing posters left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                        aria-hidden="true"><path d="m15 18-6-6 6-6"/>
+                    </svg>
                 </button>
                 <ul id="now-playing-carousel" class="poster-carousel" role="region" aria-label="Now playing movie posters">
                     <li class="poster-slide">
@@ -157,7 +303,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Dune: Part Two</span>
                             <span class="poster-description">Epic sci-fi adventure across desert worlds</span>
                         </a>
@@ -170,7 +327,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Oppenheimer</span>
                             <span class="poster-description">The atomic bomb scientist's journey</span>
                         </a>
@@ -183,7 +351,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Killers of the Flower Moon</span>
                             <span class="poster-description">A story of greed and survival in Oklahoma</span>
                         </a>
@@ -196,7 +375,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Past Lives</span>
                             <span class="poster-description">A love story across time and continents</span>
                         </a>
@@ -209,7 +399,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">The Zone of Interest</span>
                             <span class="poster-description">A haunting WWII historical drama</span>
                         </a>
@@ -217,7 +418,18 @@
                     <li class="poster-slide">
                         <a href="movie.html" aria-label="Open movie details for Barbie">
                             <img src="https://picsum.photos/seed/barbie-poster/600/800" alt="Barbie poster" loading="lazy" width="600" height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Barbie</span>
                             <span class="poster-description">A fun, colorful adventure in the Dreamhouse</span>
                         </a>
@@ -230,7 +442,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">The Holdovers</span>
                             <span class="poster-description">A Christmas break bonding story at boarding school</span>
                         </a>
@@ -243,7 +466,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Anatomy of a Fall</span>
                             <span class="poster-description">A gripping legal thriller and marriage mystery</span>
                         </a>
@@ -256,7 +490,18 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Poor Things</span>
                             <span class="poster-description">A surreal gothic romance with wild imagination</span>
                         </a>
@@ -269,27 +514,52 @@
                                 loading="lazy"
                                 width="600"
                                 height="800">
-                            <svg class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/></svg>
+                            <svg
+                                class="poster-icon lucide lucide-square-arrow-out-up-right-icon lucide-square-arrow-out-up-right"
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/><path d="m21 3-9 9"/><path d="M15 3h6v6"/>
+                            </svg>
                             <span class="poster-title">Spider-Man: Across the Spider-Verse</span>
                             <span class="poster-description">Miles Morales jumps across the multiverse</span>
                         </a>
                     </li>
                 </ul>
                 <button class="carousel-button" type="button" data-carousel-next aria-label="Scroll now playing posters right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                        aria-hidden="true"><path d="m9 18 6-6-6-6"/>
+                    </svg>
                 </button>
             </div>
         </section>
         <div class="divider"></div>
     </div>
-    <section class="form_section">
+    <section>
         <h2 class="section-title">Request a Movie</h2>
         <form class="request-form">
             <div class="input-group">
-                <label for="movie-name">Movie Name<span class="form-required" aria-hidden="true">*</span></label>
+                <label for="movie-name">Movie Name<span class="form-required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="movie-name" name="movieName" placeholder="Enter movie title" required></div>
             <div class="input-group">
-                <label for="studio-name">Studio Name<span class="form-required" aria-hidden="true">*</span></label>
+                <label for="studio-name">Studio Name<span class="form-required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="studio-name" name="studioName" placeholder="Enter studio name" required></div>
             <div class="input-group">
                 <label for="user-name">Your Full Name</label>

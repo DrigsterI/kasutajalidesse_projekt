@@ -110,7 +110,8 @@ section
     color: var(--text)
     transition: all .2s ease
     &:hover
-        background: #ffffff
+        background: var(--accent)
+        color: white
     svg
         margin: auto
 
@@ -139,7 +140,7 @@ section
         object-fit: cover
         display: block
 
-    &::before
+    a::before
         content: ""
         position: absolute
         inset: 0
@@ -160,7 +161,7 @@ section
         pointer-events: none
         z-index: 3
 
-    &::after
+    a::after
         content: ""
         position: absolute
         bottom: 0
@@ -207,16 +208,16 @@ section
         -webkit-line-clamp: 3
         -webkit-box-orient: vertical
 
-    &:hover .poster-title, &:focus .poster-title
+    a:hover .poster-title, a:focus .poster-title
         transform: translateY(-100%)
 
-    &:hover .poster-description, &:focus .poster-description
+    a:hover .poster-description, a:focus .poster-description
         transform: translateY(0)
 
-    &:hover::before, &:focus::before
+    a:hover::before, a:focus::before
         background: rgba(0, 0, 0, 0.3)
 
-    &:hover .poster-icon, &:focus .poster-icon
+    a:hover .poster-icon, a:focus .poster-icon
         opacity: 1
 
 .form-section-wrapper

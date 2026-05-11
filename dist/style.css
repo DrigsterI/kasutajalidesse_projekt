@@ -323,7 +323,8 @@ section {
   transition: all 0.2s ease;
 }
 .carousel-button:hover {
-  background: #ffffff;
+  background: var(--accent);
+  color: white;
 }
 .carousel-button svg {
   margin: auto;
@@ -354,7 +355,7 @@ section {
   object-fit: cover;
   display: block;
 }
-.poster-slide::before {
+.poster-slide a::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -375,7 +376,7 @@ section {
   pointer-events: none;
   z-index: 3;
 }
-.poster-slide::after {
+.poster-slide a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -422,16 +423,16 @@ section {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.poster-slide:hover .poster-title, .poster-slide:focus .poster-title {
+.poster-slide a:hover .poster-title, .poster-slide a:focus .poster-title {
   transform: translateY(-100%);
 }
-.poster-slide:hover .poster-description, .poster-slide:focus .poster-description {
+.poster-slide a:hover .poster-description, .poster-slide a:focus .poster-description {
   transform: translateY(0);
 }
-.poster-slide:hover::before, .poster-slide:focus::before {
+.poster-slide a:hover::before, .poster-slide a:focus::before {
   background: rgba(0, 0, 0, 0.3);
 }
-.poster-slide:hover .poster-icon, .poster-slide:focus .poster-icon {
+.poster-slide a:hover .poster-icon, .poster-slide a:focus .poster-icon {
   opacity: 1;
 }
 
