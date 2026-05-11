@@ -8,4 +8,4 @@ This is a modern cinema portal where you can quickly pick a movie and book your 
 
 Gabriel Jõe ja Maria Rjabtseva
 
-[Figma]([https://www.figma.com/design/3U6NcfnnByMb3GTsEtolb6/Untitled?node-id=0-1&t=3abu756qX5rhK20P-1](https://www.figma.com/design/3U6NcfnnByMb3GTsEtolb6/Untitled?t=jEfIYMpH1xyvZaE0-1))
+[Figma](https://www.figma.com/design/3U6NcfnnByMb3GTsEtolb6/Untitled?t=jEfIYMpH1xyvZaE0-1)
