@@ -1,15 +1,17 @@
 {% extends "base.njk" %}
 {% block title %}
-  Movie page
+    Movie page
 {% endblock %}
 {% block body %}
-    <div class= "movie_section_wrapper">
+    <div class="movie_section_wrapper">
         <section class="movie_section">
             <figure class="poster">
-                <img src="../logan_poster_pc.png"
-            alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws bared, and the sun is setting behind him.">
-                <!--<figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
-            camera, claws bared, and the sun is setting behind him.</figcaption>-->
+                <img
+                src="img/logan_poster_pc.png"
+                    alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws
+                        bared, and the sun is setting behind him.">
+            <!-- <figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
+                        camera, claws bared, and the sun is setting behind him.</figcaption> -->
             </figure>
             <article class="movie_info">
                 <div class="movie_info_text">
@@ -18,23 +20,21 @@
                         <time class="movie_release_year">2017</time>
                         <div aria-hidden="true">|</div>
                         <time datetime="PT2H17M" class="movie_lenght">2h 17m
-            </time>
+                        </time>
                         <div aria-hidden="true">|</div>
                         <div class="movie_age_restriction">16+</div>
                     </div>
                 </div>
                 <div class="movie_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
-        </div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
                 <div class="movie_cast">
                     <dl class="movie_cast_list">
                         <dt class="movie_role_name">director:</dt>
@@ -60,7 +60,6 @@
                         <li class="rating_source_name">kinogo:</li>
                         <li class="rating">9 / 10</li>
                     </ul>
-
                 </div>
             </aside>
         </section>
@@ -74,7 +73,7 @@
                     <button class="ticket_button" type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
                 </li>
                 <li class="session">
-                    <time class="session_time" >18:00</time>
+                    <time class="session_time">18:00</time>
                     <button class="ticket_button" type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
                 </li>
             </ul>
@@ -104,7 +103,8 @@
         <h2 class="section-title">Rate this movie</h2>
         <form class="rating-form">
             <div class="input-group">
-                <label for="user-nickname">Your nickname<span class="form-required" aria-hidden="true">*</span></label>
+                <label for="user-nickname">Your nickname<span class="form-required" aria-hidden="true">*</span>
+                </label>
                 <input type="text" id="user-nickname" name="userNickname" placeholder="Enter your nickname" required></div>
             <div class="input-group">
                 <label for="comment">Comment</label>
@@ -116,16 +116,12 @@
                     <div class="stars">
                         <input type="radio" id="star5" class="star" name="movieRating" value="5" required>
                         <label for="star5" title="5 stars">★</label>
-
                         <input type="radio" id="star4" class="star" name="movieRating" value="4">
                         <label for="star4" title="4 stars">★</label>
-
                         <input type="radio" id="star3" class="star" name="movieRating" value="3">
                         <label for="star3" title="3 stars">★</label>
-
                         <input type="radio" id="star2" class="star" name="movieRating" value="2">
                         <label for="star2" title="2 stars">★</label>
-
                         <input type="radio" id="star1" class="star" name="movieRating" value="1">
                         <label for="star1" title="1 star">★</label>
                     </div>
