@@ -279,3 +279,186 @@ section
 .divider
     width: 100%
     border-bottom: 2px dashed var(--text)
+
+@media (max-width: 768px)
+    .main
+        gap: 2rem
+
+    .navbar
+        flex-direction: column
+        gap: 0.5rem
+        text-align: center
+
+    .section-title
+        font-size: 1.5rem
+
+    .poster-carousel
+        --visible-cols: 1
+
+    .rating-form, .request-form
+        width: 100%
+
+        .input-group
+
+            label
+                align-self: center
+                font-weight: 600
+                font-size: 1.5rem
+
+            .rating-group
+                legend
+                    font-weight: 600
+                    font-size: 1.5rem
+
+                .stars
+                    align-items: center
+                    justify-content: center
+                    label
+                        font-size: 3rem
+
+    .section-title
+        font-size: 2rem
+
+    .movie_section
+        display: flex
+        flex-direction: column
+        width: 100%
+
+        .poster
+            width: 100%
+
+        .movie_info
+
+            .movie_description
+                text-align: justify
+                border-bottom: 1px var(--accent) solid
+                padding-bottom: 1rem
+
+            h1
+                font-size: 5rem
+
+            .movie_cast
+                border-bottom: 1px var(--accent) solid
+                padding-bottom: 1.6rem
+
+                .movie_cast_list
+                    justify-items: center
+
+                    .movie_role_name
+                        padding-top: 0.7rem
+                        &:first-of-type
+                            padding-top: 0
+
+        .ratings_block
+            width: 100%
+            .ratings_content
+                border-left: none
+
+    .movie_showtimes_section
+
+        h2
+            font-size: 2rem
+
+        .sessions-grid
+            flex-direction: column
+            border: none
+            padding: 0
+            .sessions-list
+                border-left: none
+
+                .session
+                    padding: 2rem 0
+                    border-bottom: 1px dashed var(--text)
+
+                    .session_time
+                        font-size: 2.5rem
+
+@media (min-width: 768px) and (max-width: 1366px) //tablet
+
+    .poster-carousel
+        --min-col-size: 400px
+
+    .movie_section_wrapper
+        display: block
+
+        .movie_section
+            flex-direction: column
+            gap: 0
+            padding-bottom: 3rem
+
+            .poster
+                width: 100%
+                height: auto
+
+            .movie_info
+                width: 100%
+                height: auto
+
+                .movie_title
+                    font-size: 10vw
+                .release_info
+                    font-size: 2rem
+                .movie_description
+                    font-size: 2rem
+                    text-align: justify
+                .movie_cast
+                    width: 100%
+                    font-size: 2rem
+
+            .ratings_block
+                width: 100%
+
+                border-top: solid 1px var(--accent)
+
+                .ratings_content
+                    border-left: none
+                    font-size: 4rem
+
+                    h2
+                        font-size: 5rem
+
+                    .rating_source_name
+                        font-size: 2.5rem
+
+    .sessions-grid
+        flex-direction: column
+
+        .sessions-list
+            border-left: none
+
+            .session
+                grid-template-columns: 1fr 1fr
+                justify-items: center
+
+                .session_time
+                    font-size: 4rem
+
+                .ticket_button
+                    font-size: 2rem
+
+    .section-title
+        font-size: 3rem
+
+    .rating-form, .request-form
+        .input-group
+            label
+                font-weight: 600
+                font-size: 2rem
+
+            input,textarea
+                font-size: 2rem
+
+            .rating-group
+                legend
+                    align-items: center
+                    font-weight: 600
+                    font-size: 2rem
+
+                .stars
+                    align-items: center
+                    justify-content: center
+                    label
+                        font-size: 5rem
+
+        .form-submit-button
+            font-size: 2rem
