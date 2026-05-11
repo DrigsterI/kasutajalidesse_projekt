@@ -193,16 +193,16 @@ section
         -webkit-line-clamp: 3
         -webkit-box-orient: vertical
 
-    &:hover .poster-title
+    &:hover .poster-title, &:focus .poster-title
         transform: translateY(-100%)
 
-    &:hover .poster-description
+    &:hover .poster-description, &:focus .poster-description
         transform: translateY(0)
 
-    &:hover::before
+    &:hover::before, &:focus::before
         background: rgba(0, 0, 0, 0.3)
 
-    &:hover .poster-icon
+    &:hover .poster-icon, &:focus .poster-icon
         opacity: 1
 
 .form-section-wrapper
@@ -255,6 +255,9 @@ section
 
     &:hover
         background: #b83b5a
+
+.form-required
+    color: red
 
 .section-title
     font-size: 2rem

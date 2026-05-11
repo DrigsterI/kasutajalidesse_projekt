@@ -1,29 +1,28 @@
-
 {% extends "base.njk" %}
 {% block title %}
   Movie page
 {% endblock %}
 {% block body %}
-<section class="movie_section">
-    <figure class="poster">
-    <img src="../logan_poster.png"
+    <section class="movie_section">
+        <figure class="poster">
+            <img src="../logan_poster.png"
         alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws bared, and the sun is setting behind him.">
-    <!--<figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
+            <!--<figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
         camera, claws bared, and the sun is setting behind him.</figcaption>-->
-    </figure>
-    <article class="movie_info">
-    <div class="movie_info_text">
-        <h1 class="movie_title">Logan</h1>
-        <div class="release_info">
-        <time class="movie_release_year">2017</time>
-        <div aria-hidden="true">|</div>
-        <time datetime="PT2H17M" class="movie_lenght">2h 17m
+        </figure>
+        <article class="movie_info">
+            <div class="movie_info_text">
+                <h1 class="movie_title">Logan</h1>
+                <div class="release_info">
+                    <time class="movie_release_year">2017</time>
+                    <div aria-hidden="true">|</div>
+                    <time datetime="PT2H17M" class="movie_lenght">2h 17m
         </time>
-        <div aria-hidden="true">|</div>
-        <div class="movie_age_restriction">16+</div>
-        </div>
-    </div>
-    <div class="movie_description">
+                    <div aria-hidden="true">|</div>
+                    <div class="movie_age_restriction">16+</div>
+                </div>
+            </div>
+            <div class="movie_description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -35,68 +34,68 @@
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
         est laborum.
     </div>
-    <div class="movie_cast">
-        <dl class="movie_cast_list">
-        <dt class="movie_role_name">director:</dt>
-        <dd class="movie_cast_names">James Mangold</dd>
-        <dt class="movie_role_name">writers:</dt>
-        <dd class="movie_cast_names">James Mangold</dd>
-        <dd class="movie_cast_names">Scott Frank</dd>
-        <dd class="movie_cast_names">Michael Green</dd>
-        <dt class="movie_role_name">starring:</dt>
-        <dd class="movie_cast_names">Hugh Jackman</dd>
-        <dd class="movie_cast_names">Patrick Stewart</dd>
-        </dl>
-    </div>
-    </article>
-    <aside class="ratings_block">
-    <div class="ratings_content">
-        <h2>Ratings</h2>
-        <ul class="rating_list">
-        <li class="rating_source_name">rotten tomatoes:</li>
-        <li class="rating">93% / 100%</li>
-        <li class="rating_source_name">imdb:</li>
-        <li class="rating">8.1 / 10</li>
-        <li class="rating_source_name">kinogo:</li>
-        <li class="rating">9 / 10</li>
-        </ul>
+            <div class="movie_cast">
+                <dl class="movie_cast_list">
+                    <dt class="movie_role_name">director:</dt>
+                    <dd class="movie_cast_names">James Mangold</dd>
+                    <dt class="movie_role_name">writers:</dt>
+                    <dd class="movie_cast_names">James Mangold</dd>
+                    <dd class="movie_cast_names">Scott Frank</dd>
+                    <dd class="movie_cast_names">Michael Green</dd>
+                    <dt class="movie_role_name">starring:</dt>
+                    <dd class="movie_cast_names">Hugh Jackman</dd>
+                    <dd class="movie_cast_names">Patrick Stewart</dd>
+                </dl>
+            </div>
+        </article>
+        <aside class="ratings_block">
+            <div class="ratings_content">
+                <h2>Ratings</h2>
+                <ul class="rating_list">
+                    <li class="rating_source_name">rotten tomatoes:</li>
+                    <li class="rating">93% / 100%</li>
+                    <li class="rating_source_name">imdb:</li>
+                    <li class="rating">8.1 / 10</li>
+                    <li class="rating_source_name">kinogo:</li>
+                    <li class="rating">9 / 10</li>
+                </ul>
 
-    </div>
-    </aside>
-</section>
-<section class="movie_showtimes_section">
-    <h2>SHOWTIMES</h2>
-    <div class="sessions-grid">
-    <ul class="sessions-list">
-        <li class="session">
-        <time>17:00</time>
-        <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
-        </li>
-        <li class="session">
-        <time>18:00</time>
-        <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
-        </li>
-    </ul>
-    <ul class="sessions-list">
-        <li class="session">
-        <time>19:00</time>
-        <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
-        </li>
-        <li class="session">
-        <time>20:00</time>
-        <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
-        </li>
-    </ul>
-    <ul class="sessions-list">
-        <li class="session">
-        <time>21:00</time>
-        <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
-        </li>
-        <li class="session">
-        <time>22:00</time>
-        <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
-        </li>
-    </ul>
-    </div>
-</section>
+            </div>
+        </aside>
+    </section>
+    <section class="movie_showtimes_section">
+        <h2>SHOWTIMES</h2>
+        <div class="sessions-grid">
+            <ul class="sessions-list">
+                <li class="session">
+                    <time>17:00</time>
+                    <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+                </li>
+                <li class="session">
+                    <time>18:00</time>
+                    <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+                </li>
+            </ul>
+            <ul class="sessions-list">
+                <li class="session">
+                    <time>19:00</time>
+                    <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+                </li>
+                <li class="session">
+                    <time>20:00</time>
+                    <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+                </li>
+            </ul>
+            <ul class="sessions-list">
+                <li class="session">
+                    <time>21:00</time>
+                    <button type="button" aria-label="Buy tickets for 17:00">Buy tickets</button>
+                </li>
+                <li class="session">
+                    <time>22:00</time>
+                    <button type="button" aria-label="Buy tickets for 18:00">Buy tickets</button>
+                </li>
+            </ul>
+        </div>
+    </section>
 {% endblock %}
