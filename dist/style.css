@@ -643,6 +643,11 @@ section {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 1366px) {
+  .poster-carousel {
+    --min-col-size: 400px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1366px) {
   .hero-title {
     font-size: clamp(5rem, 10vw, 6rem);
@@ -655,9 +660,6 @@ section {
     flex-direction: row;
     gap: 0.5rem;
     text-align: center;
-  }
-  .poster-carousel {
-    --min-col-size: 400px;
   }
   .movie_section_wrapper .movie_section {
     flex-direction: column;
