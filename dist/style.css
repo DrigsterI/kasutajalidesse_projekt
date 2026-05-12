@@ -509,7 +509,12 @@ section {
 }
 
 .hero-section {
+  position: relative;
   background: var(--background);
+  background-image: url("img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -517,6 +522,19 @@ section {
   min-height: 40vh;
   padding: 2rem 1.25rem;
   border-bottom: dashed 2px var(--text);
+  color: white;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 800px;
+  width: 100%;
 }
 
 .hero-title {

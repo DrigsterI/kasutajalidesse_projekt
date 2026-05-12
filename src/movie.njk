@@ -1,18 +1,22 @@
 {% extends "base.njk" %}
 {% block title %}
-    Movie page
+    LOGAN - KINO.GO
 {% endblock %}
 {% block body %}
     <div class="movie_section_wrapper">
         <section class="movie_section">
             <figure class="poster">
                 <picture>
-                <source media="(min-width: 768px) and (max-width: 1366px)" srcset="img/logan_poster.png">
-                <source media="(max-width: 768px)" srcset="img/logan_poster.png">
-                <img src="img/logan_poster_pc.png" alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws bared, and the sun is setting behind him." style="width:auto;">
+                    <source media="(min-width: 768px) and (max-width: 1366px)" srcset="img/logan_poster.png">
+                    <source media="(max-width: 768px)" srcset="img/logan_poster.png">
+                    <img
+                        src="img/logan_poster_pc.png"
+                        alt="Poster of the movie 'Logan'. Aged superhero Wolverine in a business suit stands and glares at the camera, claws
+                            bared, and the sun is setting behind him."
+                        style="width:auto;">
                 </picture>
-                <!--<figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
-            camera, claws bared, and the sun is setting behind him.</figcaption>-->
+                <!-- <figcaption>Poster of the movie Logan. Aged superhero Wolverine in a business suit stands and glares at the
+                            camera, claws bared, and the sun is setting behind him.</figcaption> -->
             </figure>
             <article class="movie_info">
                 <div class="movie_info_text">
@@ -117,16 +121,12 @@
                     <div class="stars">
                         <input type="radio" id="star1" class="star" name="movieRating" value="1" required>
                         <label for="star1" title="1 star">★</label>
-
                         <input type="radio" id="star2" class="star" name="movieRating" value="2">
                         <label for="star2" title="2 stars">★</label>
-
                         <input type="radio" id="star3" class="star" name="movieRating" value="3">
                         <label for="star3" title="3 stars">★</label>
-
                         <input type="radio" id="star4" class="star" name="movieRating" value="4">
                         <label for="star4" title="4 stars">★</label>
-
                         <input type="radio" id="star5" class="star" name="movieRating" value="5">
                         <label for="star5" title="5 stars">★</label>
                     </div>
